@@ -3,9 +3,11 @@ Code Louisville
 Web Development 1 | Wednesday
 Project Plan
 
+
 Project Brief
 
 My project will be a portfolio website to advertise my skills to potential employers. The website will contain the following sections: My Story, Skills, Projects, Education, Work Experience, Contact Me. It will all be comprised of one page, with a navigation menu at the top. The site will include two media queries that will enable the site to display on different sized viewports (tablet and desktop), thereby providing a better user experience. The media queries will use CSS Flexbox. The website will be designed as mobile first principles. All the work for the project will be completed by me. 
+
 
 I will use an HTML file for the content of the site and a CSS file to style the content. Features that my site will include are:
 •	A responsive menu, built with CSS, that will include use of a hamburger menu for mobile devices that expands to buttons on tablet and desktop viewports.
