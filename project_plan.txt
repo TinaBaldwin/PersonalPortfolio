@@ -10,6 +10,7 @@ My project will be a portfolio website to advertise my skills to potential emplo
 
 
 I will use an HTML file for the content of the site and a CSS file to style the content. Features that my site will include are:
+
 •	A responsive menu, built with CSS, that will include use of a hamburger menu for mobile devices that expands to buttons on tablet and desktop viewports.
 •	Transition animation(s) will be used for the navigation elements of the page on hover. Also transition animation for the email and social media links.
 •	A hide and show using CSS for the navigation div, so that in the mobile and table views, clicking the hamburger will bring up the full menu.
