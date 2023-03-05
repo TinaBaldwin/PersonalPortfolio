@@ -1,0 +1,204 @@
+
+
+@media print {
+  .mobile, .desktop {
+    display: none;
+  }
+  .print {
+    display: block;
+  }
+  .mainNav {
+  }
+}
+
+@media screen and (min-width: 768px){
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+  .mainNav {
+    flex-direction: row;
+  }
+  #navigation {
+    display: none;
+  }
+  header h1 {
+    display: flex;
+    justify-content: left;
+  }
+  #headshot {
+    display: block;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #555;
+       
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+  .mainNav {
+    flex-direction: column;
+  }
+  header h1 {
+    display: inline-flex;
+    justify-content: left;
+  }
+  #headshot {
+    display: flex;
+    height: auto;
+    border-radius: 50%;
+  }
+  .hamburger{
+    display: none;
+    position: relative;
+  }
+}
+
+
+head {
+  display: none;
+}
+
+
+nav > ul {
+  list-style-type: none;
+}
+
+
+
+nav > ul > li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px 0 5px;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: chartreuse;
+}
+
+.desktop, .print {
+  display: none;
+}
+
+
+.mainNav {
+  display: flex;
+  justify-content: right;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  margin: 15px 0 0 15px;
+ }
+
+.line{
+  background: black;
+  height:9px;
+  width: 110px;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+
+.btn {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 20px 0 20px 0;
+ }
+
+.btn:hover {
+  background-color:chartreuse;
+}
+
+#headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:aqua;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.myStory {
+
+}
+
+.skills{
+
+}
+
+.projects{
+
+}
+
+.education {
+
+}
+
+.workExperience {
+
+}
+
+.contactMe {
+  padding: 40px 20px;
+
+}
+
+
+.topButton {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  position: relative;
+  width: 40px;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+  text-decoration: none;
+}
+
+/* #topButton {
+  display: block;
+  position: fixed;
+  bottom: 20px; 
+  right: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size 18px;
+}*/
+
+#topButton:hover {
+  background-color:chartreuse;
+}
