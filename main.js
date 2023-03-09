@@ -1,13 +1,11 @@
 console.log ('javascript loaded');
 
 
-const hamburger - document.querySelector('.hamburger');
-const navigation-document.querySelector('navigation');
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
 
 
-
- /**  hamburger.addEventlistener('click', function(){
-    hamburger.classList.toggle('menu-open');
-    navigation.classList.toggle('')
-  });
-**/
+hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("open")
+    nav.classList.toggle('navbar')
+});
