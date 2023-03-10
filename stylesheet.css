@@ -67,51 +67,86 @@
   }
   /*nav > ul {
     list-style: none;
-  }*/
+  
+  nav a:hover{
+    color: blueviolet;
+  }
+  nav a:link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav > ul > li {
+    display: flex;
+     list-style: none;
+    margin:0px 5px 0px 5px;
+     background-color: white;
+  }  */
     
   nav > ul > li {
     display: inline-block;
-    list-style: none;
-    margin: 0 5px 0 5px;
+    list-style-type: none;
+    /*margin: 0 5px 0 5px;*/
+    margin: 0;
   }
    
 }
 /** End Desktop Screen **/
 
-
 head {
   display: none;
 }
+ h1 {
+  justify-content: space-between;
+  align-items: center;
+ }
 
 nav {
-  overflow: hidden;
-  height: 0;
+ /* overflow: hidden;*/
+  background-color: #437fc7;
+ /* height: 0;*/
   list-style: none;
 }
 
 nav.navbar {
-  height: 150px;
+  height: flex;
   transition: 0.4s;
-  list-style: none;
+  list-style-type: none;
+  display: flex;
+  background-color: whitesmoke;
 }
 
 nav a:hover{
-  color: blueviolet;
+  color: #b9732f;
 }
 
 nav a:link {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
+  /*font-weight: bold;*/
+  font-size: 1.2 rem;
+  color: whitesmoke;
 }
 
 nav > ul > li {
   display: flex;
-  list-style: none;
-  margin:0px 5px 0px 5px;
-  background-color: white;
+  list-style-type: none;
+ /* margin:0px 5px 0px 5px;*/
+  margin: 0;
+  background-color: whitesmoke; 
 }
 
+.nav {
+  display: none; /* menu items by default not visible */
+  background-color: #6daffe;
+}
+
+.nav a {
+  display: block;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  margin-left: 1rem;
+}
 
 .desktop, .print {
   display: none;
@@ -120,9 +155,15 @@ nav > ul > li {
 .hamburger {
   background-color: transparent;
   border: none;
-  margin: 15px 0 0 15px;
-  float: right;
+  /*margin: 15px 0 0 15px; */
+  /*float: right;*/
   cursor: pointer;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding-right: 2rem;
+  
  }
 
 .line {
@@ -137,7 +178,7 @@ nav > ul > li {
   transform: rotate(45deg);
   margin-top: 57px;
   transition: 0.4s;
-}
+  }
 .hamburger.open .line2 {
     opacity: 0;
 }
@@ -173,12 +214,14 @@ nav > ul > li {
 }
 
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color:aqua;
 }
 
 h2 {
   text-align: center;
+  justify-content: space-between;
 }
 
 p {
