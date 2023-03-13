@@ -10,3 +10,4 @@ hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("open")
     nav.classList.toggle('navbar')
 });
+
