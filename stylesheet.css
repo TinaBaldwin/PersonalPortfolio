@@ -28,7 +28,7 @@
     display: block;
     height: auto;
     border-radius: 50%;
-    border: 5px solid #555;
+    border: 5px solid rgb(70, 32, 223);
   }
 }
 /** End Tablet Screen **/
@@ -47,127 +47,148 @@
     height: auto;
     border-radius: 50%;
   }
+
+  .hamburger{
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+  
   nav > ul {
     list-style: none;
   }
     
-  nav > ul > li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px 0 5px;
-  }
-  
-  nav a:link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .hamburger{
-    display: none;
-  }
-  /*nav > ul {
-    list-style: none;
-  
   nav a:hover{
-    color: blueviolet;
+    color: rgb(70, 32, 223);
   }
   nav a:link {
-    color: white;
+    color: #fcf9f5;
     text-decoration: none;
     font-weight: bold;
   }
 
   nav > ul > li {
-    display: flex;
+     display: flex;
      list-style: none;
-    margin:0px 5px 0px 5px;
-     background-color: white;
-  }  */
-    
-  nav > ul > li {
-    display: inline-block;
-    list-style-type: none;
-    /*margin: 0 5px 0 5px;*/
-    margin: 0;
-  }
-   
-}
+     margin:0px 5px 0px 5px;
+     background-color:#90d9f5;
+  }  
+} 
+  
 /** End Desktop Screen **/
+
+/** Mobile Screens **/
 
 head {
   display: none;
 }
- h1 {
-  justify-content: space-between;
-  align-items: center;
- }
 
-nav {
- /* overflow: hidden;*/
-  background-color: #437fc7;
- /* height: 0;*/
-  list-style: none;
+body {
+  background-color: #fcf9f5;
 }
 
-nav.navbar {
+/** Logo Styling **/
+
+#logo {
+  width: 100px;
+  float: left;
+  margin:40px 10px 10px 55px;
+  scale: 200%;
+  border-radius: 10px;
+}
+
+/** End Logo Styling **/
+
+
+/** Nav Styling **/
+
+
+nav {
+  display: none;
+  overflow: hidden;
+  list-style: none;
   height: flex;
+  width: 16rem;
+  color: black;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: space-around;
+  margin-top: 125px;
+  float: right;
+ }
+
+nav.navbar {
   transition: 0.4s;
-  list-style-type: none;
-  display: flex;
-  background-color: whitesmoke;
+  display: inline-flex; 
+  float: right;
 }
 
 nav a:hover{
-  color: #b9732f;
+  color:#fcf9f5;
+  background-color: rgb(70, 32, 223);
+  display: block;
+  transition: .4s;
+  width: auto;
+  padding: 1rem;
+  margin: -.2rem;
+  margin-bottom: 0;
+  border-radius: 10px;
 }
 
-nav a:link {
+nav a:link, 
+nav a:visited {
   text-decoration: none;
-  /*font-weight: bold;*/
-  font-size: 1.2 rem;
-  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav > ul {
+  display: inline;
+  padding: 0;
 }
 
 nav > ul > li {
-  display: flex;
+  display: block;
   list-style-type: none;
- /* margin:0px 5px 0px 5px;*/
-  margin: 0;
-  background-color: whitesmoke; 
-}
+  margin: 5px 5px 0px 5px;
+  background-color: #90d9f5; 
+  border-radius: 10px;
+  width: 13.25rem;
+ } 
 
-.nav {
+ .nav {
   display: none; /* menu items by default not visible */
-  background-color: #6daffe;
+  background-color: transparent;
 }
 
 .nav a {
   display: block;
   font-size: 1.2rem;
-  padding-top: 2rem;
   margin-left: 1rem;
+  padding: 1rem;
 }
 
-.desktop, .print {
-  display: none;
-}
+/** End Nav Styling **/
+
+
+/** Hamburger Styling **/
 
 .hamburger {
   background-color: transparent;
   border: none;
-  /*margin: 15px 0 0 15px; */
-  /*float: right;*/
+  float: right;
   cursor: pointer;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 110px;
   padding-right: 2rem;
-  
  }
 
-.line {
-  background: black;
+.line { 
+  background: rgb(70, 32, 223);
   height:9px;
   width: 110px;
   margin-bottom: 20px;
@@ -178,31 +199,68 @@ nav > ul > li {
   transform: rotate(45deg);
   margin-top: 57px;
   transition: 0.4s;
-  }
+  scale:100%;
+  
+}
 .hamburger.open .line2 {
     opacity: 0;
+    scale: 100%;
 }
+
 .hamburger.open .line3 {
     transform: rotate(-45deg);
     margin-top: -57px;
     transition: 0.4s;
+    scale: 100%;
 } 
 
-.btn {
-  background-color: gray;
-  color: white;
-  padding: 10px 20px;
+/** End Hamburger Styling **/
+
+
+.desktop, .print {
+  display: none;
+}
+
+
+h1 {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: 100px;
-  border-radius: 10px;
+  align-items: center;
+  padding: 0 0 0 0;
+  float: left;
+  margin-left: 3em;
+}
+
+
+.bottomContainer {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fcf9f5;
+  background-color: transparent;
+  text-align: center;
+}
+
+.btn{
   text-decoration: none;
-  margin: 20px 0 20px 0;
- }
+  border-radius: 10x;
+  color:black;
+  background-color:#90d9f5;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  padding: .5em 0 0 0;
+  box-shadow: 3px 3px 3px rgb(70, 32, 223);
+}
 
 .btn:hover {
-  background-color: blueviolet;
+  background-color: rgb(70, 32, 223);
+  color: #fcf9f5;
+} 
+
+.skills {
+  display: block;
+  justify-content: space-around;
 }
 
 #headshot {
@@ -211,12 +269,12 @@ nav > ul > li {
   margin-right: auto;
   height: auto;
   border-radius: 50%;
+  border: 5px solid rgb(70, 32, 223);
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color:aqua;
 }
 
 h2 {
@@ -232,19 +290,27 @@ p {
   padding: 40px 20px;
 }
 
+/** Go To Top Button Styloing **/
 
-.topButton {
-  background-color: gray;
-  color: white;
-  padding: 10px 20px;
+#topButton {
+  background-color: #90d9f5;
+  color: black;
   display: flex;
-  position: relative;
-  width: 40px;
-  border-radius: 10px;
-  margin: 20px 0px 20px 0px;
+  margin: 2em 0 2em 2em;
   text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 75%;
+  height: 30px;
+  padding: .9em 0 0 0;
 }
 
 #topButton:hover {
-  background-color: blueviolet;
+  background-color: rgb(70, 32, 223);
+  color: #fcf9f5;
 } 
+
+/** End Go To Top Button Styling **/
+
+/** End Mobile Screen **/
