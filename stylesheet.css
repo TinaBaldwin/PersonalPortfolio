@@ -1,13 +1,21 @@
 /*********** Mobile Screens ***************/
 
 head {
-  display: none;
-}
+    display: none;
+  }
+  
+  body {
+    background-color: #fcf9f5;
+  }
 
-body {
-  background-color: #fcf9f5;
-}
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+  }
 
+<<<<<<< HEAD
 header {
   display: flex;
   flex-direction: column;
@@ -23,12 +31,23 @@ header {
  margin: 40px 10px 10px 55px;
  width: 100px;
  float: left;
+=======
+    /** Logo Styling **/
+
+#logo {
+   scale: 175%;
+   border-radius: 10%;
+   margin: 40px 10px 10px 55px;
+   width: 100px;
+   float: left;
+>>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 }
 
-/** End Logo Styling **/
+  /** End Logo Styling **/
 
 
 
+<<<<<<< HEAD
 /** Hamburger Styling **/
 
 .hamburger {
@@ -64,8 +83,93 @@ header {
 } 
 
   /** End Hamburger Styling **/
+=======
+  /** Hamburger Styling **/
+
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 110px;
+    margin-top: 1rem; 
+  }
+
+  .line { 
+    background: rgb(70, 32, 223);
+    height:9px;
+    width: 110px;
+    margin-bottom: 20px;
+    transition: all 1s;
+  }
+  
+  .hamburger.open .line1 {
+    transform: rotate(45deg);
+    margin-top: 57px;
+    transition: 0.4s; 
+  }
+  
+  .hamburger.open .line2 {
+      opacity: 0; 
+  }
+  
+  .hamburger.open .line3 {
+      transform: rotate(-45deg);
+      margin-top: -57px;
+      transition: 0.4s;  
+  } 
+  
+    /** End Hamburger Styling **/
 
 
+.nav {
+    display: none
+}
+
+nav.navbar {
+    transition: 0.4s;
+    display: flex;  
+}
+
+nav > ul > li:hover{
+    color: #fcf9f5;
+    background-color: rgb(70, 32, 223);
+    transition: .4s;
+}
+
+nav a:hover {
+  color: #fcf9f5;
+}
+
+nav a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+  
+nav > ul > li {
+    display: flex;
+    list-style-type: none;
+    margin: 4px 5px 0px 5px;
+    background-color: #90d9f5; 
+    border-radius: 10px;
+    width: 5.5rem;
+    padding: 1em;
+    box-shadow: 3px 3px 3px rgb(70, 32, 223);
+} 
+
+>>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
+
+.title {
+    display: inline-block; 
+    margin-top: 5rem;
+    text-align: center; 
+}
+
+<<<<<<< HEAD
 .nav {
   display: none
 }
@@ -74,6 +178,20 @@ nav.navbar {
   transition: 0.4s;
   display: flex;  
 }
+=======
+#headshot {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid rgb(70, 32, 223);
+    scale: 75%;
+}
+
+
+
+>>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
 nav > ul > li:hover{
   color: #fcf9f5;
@@ -113,6 +231,7 @@ nav > ul > li {
   text-align: center; 
 }
 
+<<<<<<< HEAD
 #headshot {
   display: flex;
   margin-left: auto;
@@ -122,6 +241,8 @@ nav > ul > li {
   border: 5px solid rgb(70, 32, 223);
   scale: 75%;
 }
+=======
+>>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
 
 
@@ -160,9 +281,15 @@ justify-content: space-around;
 
 
 body {
+<<<<<<< HEAD
 margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 
+=======
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+>>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 }
 
 h2 {
@@ -178,28 +305,101 @@ text-align: center;
 padding: 40px 20px;
 }
 
+<<<<<<< HEAD
 
 /** Go To Top Button Styling **/
+=======
+>>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
-#topButton {
-  background-color: #90d9f5;
-  color: black;
-  display: flex;
-  margin: 2em 0 2em 2em;
-  text-decoration: none;
-  text-align: center;
-  justify-content: center;
-  width: 50px;
-  border-radius: 75%;
-  height: 30px;
-  padding: .9em 0 0 0;
+  /** Go To Top Button Styling **/
+
+  #topButton {
+    background-color: #90d9f5;
+    color: black;
+    display: flex;
+    margin: 2em 0 2em 2em;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 75%;
+    height: 30px;
+    padding: .9em 0 0 0;
+  }
+  
+  #topButton:hover {
+    background-color: rgb(70, 32, 223);
+    color: #fcf9f5;
+  } 
+  
+    /** End Go To Top Button Styling **/
+  
+
+/************* End Mobile Screen ****************/
+
+
+
+
+
+/************ Tablet Screen *********************/
+
+@media screen and (min-width: 768px){
+
 }
 
-#topButton:hover {
-  background-color: rgb(70, 32, 223);
-  color: #fcf9f5;
-} 
+/************ End Tablet Screen ****************/
 
+
+
+
+
+/*********** Desktop Screen ********************/
+
+@media screen and (min-width: 1024px){
+ 
+  header .nav {
+    flex-direction: row;
+    float: top;
+  }
+
+  #logo {
+    scale: 225%;
+    border-radius: 10%;
+    margin: 60px 10px 10px 75px;
+    width: 100px;
+    float: left;
+ 
+  }
+
+  .hamburger{
+    display: none;
+  }
+ 
+  .nav  {
+    display: flex-box;
+    flex-direction: row !important;
+    float: top;
+  }
+
+  #headshot {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid rgb(70, 32, 223);
+    scale: 100%;
+}
+
+  }
+
+
+
+
+
+/************ End Desktop Screen **************/
+
+<<<<<<< HEAD
   /** End Go To Top Button Styling **/
 
 
@@ -272,4 +472,6 @@ nav > ul {
 
 /************ End Desktop Screen **************/
 
+=======
+>>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
