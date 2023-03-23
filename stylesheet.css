@@ -15,7 +15,6 @@ head {
     float: right;
   }
 
-<<<<<<< HEAD
 header {
   display: flex;
   flex-direction: column;
@@ -31,23 +30,12 @@ header {
  margin: 40px 10px 10px 55px;
  width: 100px;
  float: left;
-=======
-    /** Logo Styling **/
-
-#logo {
-   scale: 175%;
-   border-radius: 10%;
-   margin: 40px 10px 10px 55px;
-   width: 100px;
-   float: left;
->>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 }
 
   /** End Logo Styling **/
 
 
 
-<<<<<<< HEAD
 /** Hamburger Styling **/
 
 .hamburger {
@@ -83,85 +71,6 @@ header {
 } 
 
   /** End Hamburger Styling **/
-=======
-  /** Hamburger Styling **/
-
-  .hamburger {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    height: 110px;
-    margin-top: 1rem; 
-  }
-
-  .line { 
-    background: rgb(70, 32, 223);
-    height:9px;
-    width: 110px;
-    margin-bottom: 20px;
-    transition: all 1s;
-  }
-  
-  .hamburger.open .line1 {
-    transform: rotate(45deg);
-    margin-top: 57px;
-    transition: 0.4s; 
-  }
-  
-  .hamburger.open .line2 {
-      opacity: 0; 
-  }
-  
-  .hamburger.open .line3 {
-      transform: rotate(-45deg);
-      margin-top: -57px;
-      transition: 0.4s;  
-  } 
-  
-    /** End Hamburger Styling **/
-
-
-.nav {
-    display: none
-}
-
-nav.navbar {
-    transition: 0.4s;
-    display: flex;  
-}
-
-nav > ul > li:hover{
-    color: #fcf9f5;
-    background-color: rgb(70, 32, 223);
-    transition: .4s;
-}
-
-nav a:hover {
-  color: #fcf9f5;
-}
-
-nav a:link {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav > ul {
-    display: inline;
-    padding: 0;
-}
-  
-nav > ul > li {
-    display: flex;
-    list-style-type: none;
-    margin: 4px 5px 0px 5px;
-    background-color: #90d9f5; 
-    border-radius: 10px;
-    width: 5.5rem;
-    padding: 1em;
-    box-shadow: 3px 3px 3px rgb(70, 32, 223);
-} 
-
->>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
 .title {
     display: inline-block; 
@@ -169,7 +78,6 @@ nav > ul > li {
     text-align: center; 
 }
 
-<<<<<<< HEAD
 .nav {
   display: none
 }
@@ -178,20 +86,6 @@ nav.navbar {
   transition: 0.4s;
   display: flex;  
 }
-=======
-#headshot {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    border-radius: 50%;
-    border: 5px solid rgb(70, 32, 223);
-    scale: 75%;
-}
-
-
-
->>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
 nav > ul > li:hover{
   color: #fcf9f5;
@@ -231,7 +125,6 @@ nav > ul > li {
   text-align: center; 
 }
 
-<<<<<<< HEAD
 #headshot {
   display: flex;
   margin-left: auto;
@@ -241,8 +134,6 @@ nav > ul > li {
   border: 5px solid rgb(70, 32, 223);
   scale: 75%;
 }
-=======
->>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
 
 
@@ -281,15 +172,9 @@ justify-content: space-around;
 
 
 body {
-<<<<<<< HEAD
 margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 
-=======
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  
->>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 }
 
 h2 {
@@ -305,11 +190,8 @@ text-align: center;
 padding: 40px 20px;
 }
 
-<<<<<<< HEAD
 
 /** Go To Top Button Styling **/
-=======
->>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
   /** Go To Top Button Styling **/
 
@@ -399,7 +281,6 @@ padding: 40px 20px;
 
 /************ End Desktop Screen **************/
 
-<<<<<<< HEAD
   /** End Go To Top Button Styling **/
 
 
@@ -472,6 +353,4 @@ nav > ul {
 
 /************ End Desktop Screen **************/
 
-=======
->>>>>>> 25ec56ea35656d46b52d250777ef50fab82322ba
 
