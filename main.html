@@ -48,8 +48,7 @@
         <li><a href="#contactMe">Contact Me</a></li>
       </ul>
     
-    <script src="main.js"></script>
-      
+       
     </nav>
       
 <!-- Top Navigation Menu End-->
@@ -72,12 +71,21 @@
       <p>I use my knowledge of people and accessbility to build websites.</p>
    </div>
 
-    <div id="skills" class="skills">
+    <div>
       <h2>Skills</h2>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>Javascript</p>
-    </div>
+        <ul id="skillsList"></ul>
+        <script>
+          let data = ["HTML", "CSS", "Javascript"];
+
+          let list = document.getElementById("skillsList");
+
+          data.forEach((item) => {
+            let li = document.createElement("li");
+            li.innerText = item;
+            list.appendChild(li);
+          });
+        </script>
+     </div>
 
     <div id="projects" class="projects">
      <h2>Projects</h2>
@@ -106,7 +114,7 @@
     <a href="#top" id="topButton" class="btn" title="Go to top">Top</a>
     
   </main>
-
+  <script src="main.js"></script>
 </body>
 
 <footer>
