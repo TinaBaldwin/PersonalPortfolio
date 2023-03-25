@@ -9,13 +9,14 @@ hamburger.addEventListener("click", function () {
 });
 
 
+
+
 let list = document.getElementById("skillsList");
 
 let data = ['HTML', 'CSS', 'Javascript'];
 
 data.forEach((item)=>{
     let li = document.createElement("li");
-    console.log(li);
     li.innerText = item;
     list.appendChild(li);
-})
+});

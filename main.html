@@ -9,13 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tina Baldwin Portfolio</title>
   <link rel="stylesheet" href="stylesheet.css"/>
- 
 </head>
 
 <!-- End Meta Tags -->
 
 <body>
- 
+
 <!-- Begin Logo -->
 
 <img id="logo" src="images/logo.png" alt="Logo"/>
@@ -24,7 +23,7 @@
     
 
   <header>
-   
+
 
 <!-- Hamburger Button -->
 
@@ -48,8 +47,9 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contactMe">Contact Me</a></li>
       </ul>
-    
-       
+      <script src="main.js"></script>
+
+
     </nav>
       
 <!-- Top Navigation Menu End-->
@@ -73,20 +73,14 @@
    </div>
    
     <div>
+
       <h2>Skills</h2>
-        <ul id="skillsList"></ul>
-        <script>
-          let data = ["HTML", "CSS", "Javascript"];
+        <ul id="skillsList">
 
-          let list = document.getElementById("skillsList");
+        </ul>
+        <script src="main.js"></script>
 
-          data.forEach((item) => {
-            let li = document.createElement("li");
-            li.innerText = item;
-            list.appendChild(li);
-          });
-        </script>
-     </div>
+    </div>
 
     <div id="projects" class="projects">
      <h2>Projects</h2>
@@ -115,7 +109,6 @@
     <a href="#top" id="topButton" class="btn" title="Go to top">Top</a>
     
   </main>
-  <script src="main.js"></script>
 </body>
 
 <footer>
