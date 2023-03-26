@@ -137,6 +137,33 @@ nav > ul > li {
   scale: 75%;
 }
 
+.accordion {
+  background-color: #90d9f5;
+  color: rgb(70, 32, 223);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(70, 32, 223);
+  color: white;
+}
+
+.panel {
+  padding 0px 18px;
+  background-color: #fcf9f5;
+  display: none;
+  overflow: hidden;
+}
+
+
 .bottomContainer {
 display: flex;
 justify-content: space-evenly;
@@ -169,10 +196,11 @@ margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
+
+/** h2 {
 text-align: center;
 justify-content: space-between;
-}
+}**/
 
 #skillsList {
   display: flex;
@@ -186,9 +214,10 @@ p {
 text-align: center;
 }
 
-.contactMe {
+#contactMe {
 padding: 40px 20px;
 }
+
 
 
 /** Go To Top Button Styling **/
