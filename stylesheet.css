@@ -68,7 +68,7 @@ header {
     color:black;
     display: flex; 
     flex-wrap: wrap;
-    flex-direction: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     padding: 20px 0 0px 0;
