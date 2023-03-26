@@ -1,3 +1,5 @@
+//hamburger //
+
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
@@ -9,6 +11,7 @@ hamburger.addEventListener("click", function () {
 });
 
 
+// Array for skills list //
 
 let data = ['HTML', 'CSS', 'Javascript'];
 
@@ -20,6 +23,8 @@ data.forEach((item)=>{
     console.log(list);
     list.appendChild(li);
 });
+
+// Accordion for h2 sections of page //
 
 var acc = document.getElementsByClassName("accordion");
 var i;

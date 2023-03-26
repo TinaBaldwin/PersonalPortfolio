@@ -17,53 +17,54 @@ header {
 
   /** Logo Styling **/
 
-#logo {
- scale: 175%;
- border-radius: 10%;
- margin: 40px 10px 10px 55px;
- width: 100px;
-}
+  #logo {
+    scale: 175%;
+    border-radius: 10%;
+    margin: 40px 10px 10px 55px;
+    width: 100px;
+  }
 
   /** End Logo Styling **/
 
 
 
-/** Hamburger Styling **/
+  /** Hamburger Styling **/
 
-.hamburger {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  height: 110px;
-  margin-top: 1rem; 
-}
+  .hamburger {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+    height: 110px;
+    margin-top: 1rem; 
+  }
 
-.line { 
-  background: rgb(70, 32, 223);
-  height:9px;
-  width: 110px;
-  margin-bottom: 20px;
-  transition: all 1s;
-}
+  .line { 
+    background: rgb(70, 32, 223);
+    height:9px;
+    width: 110px;
+    margin-bottom: 20px;
+    transition: all 1s;
+  }
 
-.hamburger.open .line1 {
-  transform: rotate(45deg);
-  margin-top: 57px;
-  transition: 0.4s; 
-}
+  .hamburger.open .line1 {
+    transform: rotate(45deg);
+    margin-top: 57px;
+    transition: 0.4s; 
+  }
 
-.hamburger.open .line2 {
+  .hamburger.open .line2 {
     opacity: 0; 
-}
+  }
 
-.hamburger.open .line3 {
+  .hamburger.open .line3 {
     transform: rotate(-45deg);
     margin-top: -57px;
     transition: 0.4s;  
-} 
+  } 
 
   /** End Hamburger Styling **/
 
+  /** Page Title Styling **/
 .title {
     color:black;
     display: flex; 
@@ -73,6 +74,8 @@ header {
     align-content: center;
     padding: 20px 0 0px 0;
 }
+
+/** End of Page Title Styling **/
 
 /** Navigation Styling **/
 
@@ -109,7 +112,6 @@ nav > ul > li {
   list-style-type: none;
   margin: 4px 5px 0px 5px;
   background-color: #90d9f5; 
-  /*color:rgb(243, 246, 248);*/
   border-radius: 10px;
   width: 5.5rem;
   padding: 1em;
@@ -120,6 +122,8 @@ nav > ul > li {
 
 /** End Navigation Styling **/
 
+/**Headsot styling **/
+
 #headshot {
   display: flex;
   margin: 0 auto 2rem auto; 
@@ -128,6 +132,8 @@ nav > ul > li {
   border: 5px solid rgb(70, 32, 223);
   scale: 100%;
 }
+
+/** End of Headshot styling **/
 
 /** Accordion Styling **/
 
@@ -158,7 +164,10 @@ nav > ul > li {
   overflow: hidden;
 }
 
-/** Accordion Styling **/
+/** End of Accordion Styling **/
+
+
+/** Contact me section Styling **/
 
 .bottomContainer {
 display: flex;
@@ -167,6 +176,10 @@ color: rgb(243, 246, 248);
 background-color: transparent;
 text-align: center;
 }
+
+/** End of Contact me section styling **/
+
+/** Button Styling **/
 
 .btn {
 text-decoration: none;
@@ -193,6 +206,10 @@ margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+/**End of Button Styling **/
+
+/** h2 Section styling **/
+
 h2 {
 text-align: center;
 justify-content: space-between;
@@ -200,7 +217,7 @@ justify-content: space-between;
 
 #skillsList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
@@ -208,10 +225,11 @@ justify-content: space-between;
 
 .projectContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
-  padding: 20px;
+  padding: 10px;
 }
 
 #portfolioProject {
@@ -234,10 +252,11 @@ justify-content: space-between;
   color: rgb(243, 246, 248);
 }
 
-
 p {
 text-align: center;
 }
+
+/** End of h2 section styling **/
 
   /** Go To Top Button Styling **/
 
@@ -276,36 +295,19 @@ text-align: center;
 /************ Tablet Screen *********************/
 
 @media screen and (min-width: 768px){
- 
- 
-  /* this opens the hamburger to the side and brings the 
-  headshot and title to the left side of screen.
-  
-hamburger float right
-flex directxion: row reverse is the element style in 
-the inspection console
 
-  .title {
-    color:black;
-    display: flex; 
-    flex-wrap: nowrap;
+  /** Change skills list from column to row **/
+
+  #skillsList {
     flex-direction: row;
-    align-items: center;
-    align-content: center;
-    padding: 20px 0 0px 0;
-    margin: auto;
-}*/
+  }
+ 
 
-/* nav > ul {
-  display: inline;
-  padding:0;
-}
-nav.navbar {
-  display: flex;
-  color: rgb(70, 32, 223);
-}
-*/
+  /** Changes Project from column to row **/
 
+  .projectContainer {
+   flex-direction: row;
+  }
 }
 
 /************ End Tablet Screen ****************/
@@ -316,14 +318,10 @@ nav.navbar {
 
 @media screen and (min-width: 1024px){
  
+  /** Change navigation bar at top to row and remove hamburger **/
   header .nav {
     flex-direction: row;
     float: top;
-  }
-
-  #logo {
-    scale: 240%;
-    margin: 60px 10px 10px 75px;
   }
 
   .hamburger{
@@ -336,26 +334,37 @@ nav.navbar {
     float: top;
   }
 
-.nav {
-  display: block;
-  flex-direction: row !important;
-  float: top;
-}
+  .nav {
+    display: block;
+    flex-direction: row !important;
+    float: top;
+  }
 
-nav > ul {
-  display: flex;
-  padding: 0;
-}
+  nav > ul {
+    display: flex;
+    padding: 0;
+  }
 
-nav > ul > li{
-  font-size: 1.5em;
-  width: 6.0rem;
-}
+  nav > ul > li{
+    font-size: 1.5em;
+    width: 6.0rem;
+  }
+
+/** Enlarge the logo **/
+
+  #logo {
+    scale: 240%;
+    margin: 60px 10px 10px 75px;
+  }
+
+/** Change scaling of the headshot **/
 
 #headshot {
   margin-bottom: 2rem;
   scale: 100%;
 }
+
+/** Enlarge fonts of sections **/
 
 .title {
   font-size: 3rem;
@@ -397,10 +406,6 @@ p {
   height: 40px;
   font-size: 1.5em;
 }
-
-
-
-
 
 
 /************ End Desktop Screen **************/
