@@ -41,7 +41,7 @@
 
     <nav class="nav">
       <ul>
-        <li><a href="#myStory">My Story</a></li>
+        <li><a href=#myStory>My Story</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
@@ -62,25 +62,29 @@
       <img id="headshot" src="images/headshot.jpg" alt="Tina Baldwin"/>
 
       <!---------- Accordion ------------>
-      <button class="accordion"><h2>My Story</h2></button>
-        <div class="panel">
+      <button id="myStory" class="accordion"><h2>My Story</h2></button>
+        <div class="panel" >
         <p>I'm a web developer with a background in occupational therapy</p>
         <p>I use my knowledge of people and accessibility to build websites.</p>
       </div>  
   
-    <button class="accordion"><h2>Skills</h2></button>
+    <button id="skills" class="accordion"><h2>Skills</h2></button>
       <div class="panel">
         <ul id="skillsList"></ul>
       </div>
 
      <button id="projects" class="accordion"><h2>Projects</h2></button>
       <div class="panel">
-       <p>Personal Portfolio Website - Web Development Course 1, Code Louisville 2023</p>
+        <div class="projectContainer">
+         <img id="portfolioProject" src="images/logo.png" alt="Portfolio Project"/>
+         <p>Personal Portfolio Website - <br> Web Development Course 1, <br> Code Louisville 2023</p>
+         <a id="portfolioGitHub" class="btn" href="https://github.com/TinaBaldwin/Web-Dev-Course-1-Project">See it on GitHub</a></p>
+        </div>       
        <p>More to come...</p>
      </div>
     </button>
 
-    <button class="accordion"><h2>Education</h2></button>
+    <button id="education" class="accordion"><h2>Education</h2></button>
      <div class="panel">
       <p>Web Development Course 1 - Code Louisville</p>
       <p>Masters of Science, Occupational Therapy - Eastern Kentucky University</p>
@@ -88,7 +92,7 @@
       <p>Bachelor of Science, Psychology - Indiana University</p>
      </div>
 
-   <button class="accordion"><h2>Contact Me</h2></button>
+   <button id="contactMe" class="accordion"><h2>Contact Me</h2></button>
    <div class="panel">
     <p>Please contact me for career opportunities.</p>
     <p>Email is the best way to reach me.</p>

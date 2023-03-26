@@ -5,7 +5,7 @@ head {
   }
   
   body {
-    background-color: #fcf9f5;
+    background-color: rgb(243, 246, 248);
   }
 
 header {
@@ -22,7 +22,6 @@ header {
  border-radius: 10%;
  margin: 40px 10px 10px 55px;
  width: 100px;
- float: left;
 }
 
   /** End Logo Styling **/
@@ -66,41 +65,38 @@ header {
   /** End Hamburger Styling **/
 
 .title {
-    display: block; 
-    /* margin: 120px 5rem 10px 5rem; */
-    text-align: center; 
-    justify-content: center;
-    padding:20px;
-    /*flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    align-content: space-around;*/
+    color:black;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: flex;
+    align-items: center;
+    align-content: center;
+    padding: 20px 0 0px 0;
 }
 
 /** Navigation Styling **/
 
 .nav {
-  display: none;
-  
+  display: none; 
 }
 
 nav.navbar {
-  transition: 0.4s;
   display: flex;  
+  color:rgb(70, 32, 223);
 }
 
-nav > ul > li:hover{
-  color: #fcf9f5;
+nav > ul > li:hover {
   background-color: rgb(70, 32, 223);
   transition: .4s;
 }
 
 nav a:hover {
-color: #fcf9f5;
+  color: rgb(243, 246, 248);
 }
 
 nav a:link {
-text-decoration: none;
-font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav > ul {
@@ -113,6 +109,7 @@ nav > ul > li {
   list-style-type: none;
   margin: 4px 5px 0px 5px;
   background-color: #90d9f5; 
+  /*color:rgb(243, 246, 248);*/
   border-radius: 10px;
   width: 5.5rem;
   padding: 1em;
@@ -125,12 +122,11 @@ nav > ul > li {
 
 #headshot {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2rem auto; 
   height: auto;
   border-radius: 50%;
   border: 5px solid rgb(70, 32, 223);
-  scale: 75%;
+  scale: 100%;
 }
 
 /** Accordion Styling **/
@@ -157,7 +153,7 @@ nav > ul > li {
 
 .panel {
   padding: 0px 18px;
-  background-color: #fcf9f5;
+  background-color: rgb(243, 246, 248);
   display: none;
   overflow: hidden;
 }
@@ -167,15 +163,15 @@ nav > ul > li {
 .bottomContainer {
 display: flex;
 justify-content: space-evenly;
-color: #fcf9f5;
+color: rgb(243, 246, 248);
 background-color: transparent;
 text-align: center;
 }
 
-.btn{
+.btn {
 text-decoration: none;
 border-radius: 10x;
-color: rgb(70, 32, 223);
+color:  rgb(70, 32, 223);
 background-color:#90d9f5;
 width: 100px;
 text-align: center;
@@ -189,7 +185,7 @@ margin: .25rem;
 
 .btn:hover {
 background-color: rgb(70, 32, 223);
-color: #fcf9f5;
+color: rgb(243, 246, 248);
 } 
 
 body {
@@ -205,19 +201,43 @@ justify-content: space-between;
 #skillsList {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
 }
 
+.projectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+
+#portfolioProject {
+  display: flex; 
+  align-self: center;
+  border-radius: 10%;
+  border: 10px solid rgb(70, 32, 223);
+  height: 20%;
+  padding: 5px;
+  width: 20%; 
+  margin-top: 25px;
+}
+
+#portfolioGitHub {
+  width: 150px;
+}
+
+#portfolioGitHub:hover {
+  background-color: rgb(70, 32, 223);
+  color: rgb(243, 246, 248);
+}
+
+
 p {
 text-align: center;
 }
-
-#contactMe {
-padding: 40px 20px;
-}
-
 
   /** Go To Top Button Styling **/
 
@@ -238,7 +258,7 @@ padding: 40px 20px;
   
   #topButton:hover {
     background-color: rgb(70, 32, 223);
-    color: #fcf9f5;
+    color: rgb(243, 246, 248);
     transition: .4s;
   } 
   
@@ -256,15 +276,39 @@ padding: 40px 20px;
 /************ Tablet Screen *********************/
 
 @media screen and (min-width: 768px){
+ 
+ 
+  /* this opens the hamburger to the side and brings the 
+  headshot and title to the left side of screen.
+  
+hamburger float right
+flex directxion: row reverse is the element style in 
+the inspection console
+
+  .title {
+    color:black;
+    display: flex; 
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 20px 0 0px 0;
+    margin: auto;
+}*/
+
+/* nav > ul {
+  display: inline;
+  padding:0;
+}
+nav.navbar {
+  display: flex;
+  color: rgb(70, 32, 223);
+}
+*/
 
 }
 
 /************ End Tablet Screen ****************/
-
-
-
-
-
 
 
 
@@ -278,9 +322,9 @@ padding: 40px 20px;
   }
 
   #logo {
-    scale: 225%;
+    scale: 240%;
     margin: 60px 10px 10px 75px;
-v }
+  }
 
   .hamburger{
     display: none;
@@ -292,7 +336,7 @@ v }
     float: top;
   }
 
-.nav  {
+.nav {
   display: block;
   flex-direction: row !important;
   float: top;
@@ -309,8 +353,12 @@ nav > ul > li{
 }
 
 #headshot {
-  margin-bottom: 3.25rem;
+  margin-bottom: 2rem;
   scale: 100%;
+}
+
+.title {
+  font-size: 3rem;
 }
 
 h2 {
@@ -326,6 +374,16 @@ p {
   margin: auto;
   font-size: 1.5rem;
   padding: 1.25rem;
+}
+
+#portfolioProject {
+  width: 217.87px;
+  height: 164.09px;
+}
+
+#portfolioGitHub {
+  width: 150px;
+  height: 75px;
 }
 
 #topButton {
@@ -346,5 +404,3 @@ p {
 
 
 /************ End Desktop Screen **************/
-
-
