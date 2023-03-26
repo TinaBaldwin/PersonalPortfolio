@@ -8,13 +8,6 @@ head {
     background-color: #fcf9f5;
   }
 
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: right;
-  }
-
 header {
   display: flex;
   flex-direction: column;
@@ -73,13 +66,21 @@ header {
   /** End Hamburger Styling **/
 
 .title {
-    display: inline-grid; 
-    margin-top: 11rem;
+    display: block; 
+    /* margin: 120px 5rem 10px 5rem; */
     text-align: center; 
+    justify-content: center;
+    padding:20px;
+    /*flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: space-around;*/
 }
 
+/** Navigation Styling **/
+
 .nav {
-  display: none
+  display: none;
+  
 }
 
 nav.navbar {
@@ -120,12 +121,7 @@ nav > ul > li {
   align-items: center;
 } 
 
-
-.title {
-  display: inline-block; 
-  margin-top: 5rem;
-  text-align: center; 
-}
+/** End Navigation Styling **/
 
 #headshot {
   display: flex;
@@ -137,18 +133,21 @@ nav > ul > li {
   scale: 75%;
 }
 
+/** Accordion Styling **/
+
 .accordion {
   background-color: #90d9f5;
   color: rgb(70, 32, 223);
   cursor: pointer;
-  padding: 18px;
+  padding: .1rem;
+  margin: .25rem;
   width: 100%;
   text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
-  font-size: 32px;
   font-weight: bold;
+  box-shadow: 3px 3px 3px rgb(70, 32, 223);
 }
 
 .active, .accordion:hover {
@@ -157,12 +156,13 @@ nav > ul > li {
 }
 
 .panel {
-  padding 0px 18px;
+  padding: 0px 18px;
   background-color: #fcf9f5;
   display: none;
   overflow: hidden;
 }
 
+/** Accordion Styling **/
 
 .bottomContainer {
 display: flex;
@@ -184,6 +184,7 @@ height: 30px;
 padding: .5em 0 0 0;
 box-shadow: 3px 3px 3px rgb(70, 32, 223);
 font-weight: bold;
+margin: .25rem;
 }
 
 .btn:hover {
@@ -196,11 +197,10 @@ margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/** h2 {
+h2 {
 text-align: center;
 justify-content: space-between;
-}**/
+}
 
 #skillsList {
   display: flex;
@@ -218,9 +218,6 @@ text-align: center;
 padding: 40px 20px;
 }
 
-
-
-/** Go To Top Button Styling **/
 
   /** Go To Top Button Styling **/
 
@@ -242,6 +239,7 @@ padding: 40px 20px;
   #topButton:hover {
     background-color: rgb(70, 32, 223);
     color: #fcf9f5;
+    transition: .4s;
   } 
   
     /** End Go To Top Button Styling **/
@@ -281,11 +279,8 @@ padding: 40px 20px;
 
   #logo {
     scale: 225%;
-    border-radius: 10%;
     margin: 60px 10px 10px 75px;
-    width: 100px;
-    float: left;
-  }
+v }
 
   .hamburger{
     display: none;
@@ -295,22 +290,6 @@ padding: 40px 20px;
     display: flex-box;
     flex-direction: row !important;
     float: top;
-  }
-
-
-h2 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.5em;
-}
-
-#skillsList {
-  width: 61.25rem;
-  justify-content: space-evenly;
-  margin: auto;
-  font-size: 1.5em;
   }
 
 .nav  {
@@ -330,38 +309,37 @@ nav > ul > li{
 }
 
 #headshot {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  border-radius: 50%;
-  border: 5px solid rgb(70, 32, 223);
+  margin-bottom: 3.25rem;
   scale: 100%;
 }
-.btn {
-  font-size: 1.5em;
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+#skillsList {
+  width: 61.25rem;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 1.25rem;
 }
 
 #topButton {
-  display: flex;
-  margin: 2em 0 2em 2em;
-  text-align: center;
-  justify-content: center;
   width: 75px;
   border-radius: 75%;
   height: 45px;
-  padding: .9em 0 0 0;
 }
 
 .btn{
-  width: 125px;
-  text-align: center;
-  border-radius: 10px;
+  width: 144px;
   height: 40px;
-  padding: .5em 0 0 0;
+  font-size: 1.5em;
 }
 
-}
 
 
 
